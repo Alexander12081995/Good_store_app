@@ -1,0 +1,18 @@
+.container {
+    margin-top: 50px;
+}
+.link {
+    text-align: center;
+}
+.title {
+    width: 100%;
+    background-color: gray;
+    margin-bottom: 20px;
+    color: black;
+}
+.listCard {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+}

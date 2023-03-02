@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    padding: 0 0 30px 30px;
+    background-color: azure;
+}
+.list {
+    width: 300px;
+    list-style: none;
+}
+.categories {
+    color: black;
+    font-style: italic;
+}
+.category {
+    margin-top: 15px;
+}
+.carouselBlock {
+    width: 1100px;
+    height: 450px;
+}
+
+
