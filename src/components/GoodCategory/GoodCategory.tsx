@@ -2,7 +2,7 @@ import {FC} from 'react';
 import {Category} from '../../types';
 import {Good} from '../../types';
 import {Link} from "react-router-dom";
-import {products} from '../../api';
+import products from '../../api/products.json';
 import {Card} from '../index';
 import css from './good.module.css';
 
@@ -14,8 +14,8 @@ export const GoodCategory: FC<Category> = ({type, label, id}) => {
             </Link>
             <ul className={css.listCard}>
                 {products
-                    .filter((product: any) => product.categoryTypeId === type)
-                    .map((product: any) => (
+                    .filter((product: Good) => product.categoryTypeId === type)
+                    .map((product) => (
                         <li key={product.id} >
                             <Card img={product.img}
                                   label={product.label}
