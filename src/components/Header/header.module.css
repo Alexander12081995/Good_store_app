@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: aliceblue;
+}
+.logo {
+    max-width: 150px;
+    max-height: 100px;
+}
+.search {
+    max-width: 800px;
+}
+.login {
+    width: 200px;
+
+}
+.basket {
+    color: black;
+}

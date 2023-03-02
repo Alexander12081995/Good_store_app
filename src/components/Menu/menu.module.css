@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    padding: 0 0 30px 30px;
+    background-color: azure;
+}
+.list {
+    width: 20%;
+    list-style: none;
+}
+.categories {
+    color: black;
+    font-style: italic;
+}
+.carousel_block {
+    width: 80%;
+    height: 450px;
+}
+.carousel {
+    width: 100%;
+    height: 100%;
+}
+.img {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    text-align: center;
+}
+.title {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 58px;
+    letter-spacing: 10px;
+    font-weight: 900;
+    color: black;
+}
+.btn {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 50px;
+    font-size: 21px;
+    background-color: black;
+    color: azure;
+}
+.btn:hover {
+    top: 58%;
+}
+
