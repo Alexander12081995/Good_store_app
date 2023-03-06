@@ -1,7 +1,7 @@
 export interface Category {
-    id: string;
+    id?: string;
     type: string;
-    label: string;
+    label?: string;
 }
 
 export interface Good {
@@ -11,4 +11,11 @@ export interface Good {
     img: string;
     label: string;
     price: string;
+}
+
+export enum LOAD_STATUSES {
+    LOADED = "LOADED",
+    LOADING = "LOADING",
+    ERROR = "ERROR",
+    UNKNOWN = "UNKNOWN"
 }

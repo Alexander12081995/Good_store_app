@@ -1,0 +1,37 @@
+.productNavigate {
+    display: flex;
+    column-gap: 10px;
+    margin: 30px 30px 0;
+}
+.containerCard {
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px 30px 0;
+}
+.cardImg {
+    width: 380px;
+    height: 512px;
+}
+.descriptionCard {
+    margin-left: 30px;
+    width: 800px;
+}
+.productTitle {
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+.productPrice {
+    margin-top: 20px;
+    font-size: 40px;
+    color: #444242;
+}
+.productBasket {
+    margin-top: 20px;
+    background-color: orange;
+    color: white;
+}
+.productDescription {
+    margin-top: 20px;
+    font-size: 17px;
+    font-style: italic;
+}

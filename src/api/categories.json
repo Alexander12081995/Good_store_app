@@ -1,0 +1,13 @@
+[
+  {"id": "1", "label": "Продукты, деликатесы", "type": "products"},
+  {"id": "2", "label": "Косметика, парфюмерия", "type": "cosmetics"},
+  {"id": "3", "label": "Развлечения, творчество", "type": "fun"},
+  {"id": "4", "label": "Сувениры, галантерея", "type": "souvenirs"},
+  {"id": "5", "label": "Техника, электроника", "type": "appliances"},
+  {"id": "6", "label": "Дом, сад, зоотовары", "type": "home"},
+  {"id": "7", "label": "Книги", "type": "books"},
+  {"id": "8", "label": "Детям и мамам", "type": "children"},
+  {"id": "9", "label": "Канцтовары, учеба", "type": "office"},
+  {"id": "10", "label": "Туризм, отдых, спорт", "type": "sport"},
+  {"id": "11", "label": "Здоровье, медтехника", "type": "health"}
+]

@@ -1,7 +1,8 @@
 .cardWrapper {
     position: relative;
-    width: 176px;
-    height: 176px;
+    width: 200px;
+    height: 250px;
+    color: black;
 }
 
 .img {

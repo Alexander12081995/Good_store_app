@@ -11,8 +11,11 @@
     color: black;
 }
 .listCard {
+    margin-left: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    column-gap: 30px;
+    row-gap: 30px;
     flex-wrap: wrap;
     list-style: none;
 }

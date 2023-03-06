@@ -40,9 +40,121 @@
     "price": "23,45р"
   },
   {
+    "categoryTypeId": "products",
+    "description": "Правильное питание",
+    "id": "6",
+    "img": "https://images.unsplash.com/photo-1675284737540-4c88488a58b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDAyNA&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Продукт",
+    "price": "23,45р"
+  },
+  {
+    "categoryTypeId": "products",
+    "description": "Правильное питание",
+    "id": "7",
+    "img": "https://images.unsplash.com/photo-1675284737540-4c88488a58b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDAyNA&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Продукт",
+    "price": "23,45р"
+  },
+  {
+    "categoryTypeId": "products",
+    "description": "Правильное питание",
+    "id": "8",
+    "img": "https://images.unsplash.com/photo-1675284737540-4c88488a58b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDAyNA&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Продукт",
+    "price": "23,45р"
+  },
+  {
+    "categoryTypeId": "products",
+    "description": "Правильное питание",
+    "id": "9",
+    "img": "https://images.unsplash.com/photo-1675284737540-4c88488a58b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDAyNA&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Продукт",
+    "price": "23,45р"
+  },
+  {
+    "categoryTypeId": "products",
+    "description": "Правильное питание",
+    "id": "10",
+    "img": "https://images.unsplash.com/photo-1675284737540-4c88488a58b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDAyNA&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Продукт",
+    "price": "23,45р"
+  },
+  {
     "categoryTypeId": "cosmetics",
     "description": "Лучшая косметика",
-    "id": "6",
+    "id": "11",
+    "img": "https://images.unsplash.com/photo-1676578732408-134d55bc408d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDU5NA&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Косметика",
+    "price": "25,00р"
+  },
+  {
+    "categoryTypeId": "cosmetics",
+    "description": "Лучшая косметика",
+    "id": "12",
+    "img": "https://images.unsplash.com/photo-1676578732408-134d55bc408d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDU5NA&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Косметика",
+    "price": "25,00р"
+  },
+  {
+    "categoryTypeId": "cosmetics",
+    "description": "Лучшая косметика",
+    "id": "13",
+    "img": "https://images.unsplash.com/photo-1676578732408-134d55bc408d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDU5NA&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Косметика",
+    "price": "25,00р"
+  },
+  {
+    "categoryTypeId": "cosmetics",
+    "description": "Лучшая косметика",
+    "id": "14",
+    "img": "https://images.unsplash.com/photo-1676578732408-134d55bc408d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDU5NA&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Косметика",
+    "price": "25,00р"
+  },
+  {
+    "categoryTypeId": "cosmetics",
+    "description": "Лучшая косметика",
+    "id": "15",
+    "img": "https://images.unsplash.com/photo-1676578732408-134d55bc408d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDU5NA&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Косметика",
+    "price": "25,00р"
+  },
+  {
+    "categoryTypeId": "cosmetics",
+    "description": "Лучшая косметика",
+    "id": "16",
+    "img": "https://images.unsplash.com/photo-1676578732408-134d55bc408d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDU5NA&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Косметика",
+    "price": "25,00р"
+  },
+  {
+    "categoryTypeId": "cosmetics",
+    "description": "Лучшая косметика",
+    "id": "17",
+    "img": "https://images.unsplash.com/photo-1676578732408-134d55bc408d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDU5NA&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Косметика",
+    "price": "25,00р"
+  },
+  {
+    "categoryTypeId": "cosmetics",
+    "description": "Лучшая косметика",
+    "id": "18",
+    "img": "https://images.unsplash.com/photo-1676578732408-134d55bc408d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDU5NA&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Косметика",
+    "price": "25,00р"
+  },
+  {
+    "categoryTypeId": "cosmetics",
+    "description": "Лучшая косметика",
+    "id": "19",
+    "img": "https://images.unsplash.com/photo-1676578732408-134d55bc408d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDU5NA&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Косметика",
+    "price": "25,00р"
+  },
+  {
+    "categoryTypeId": "cosmetics",
+    "description": "Лучшая косметика",
+    "id": "20",
     "img": "https://images.unsplash.com/photo-1676578732408-134d55bc408d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDU5NA&ixlib=rb-4.0.3&q=80&w=1080",
     "label": "Косметика",
     "price": "25,00р"
@@ -50,7 +162,79 @@
   {
     "categoryTypeId": "fun",
     "description": "Настольная игра",
-    "id": "7",
+    "id": "21",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Монополия",
+    "price": "18,00р"
+  },
+  {
+    "categoryTypeId": "fun",
+    "description": "Настольная игра",
+    "id": "22",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Монополия",
+    "price": "18,00р"
+  },
+  {
+    "categoryTypeId": "fun",
+    "description": "Настольная игра",
+    "id": "23",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Монополия",
+    "price": "18,00р"
+  },
+  {
+    "categoryTypeId": "fun",
+    "description": "Настольная игра",
+    "id": "24",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Монополия",
+    "price": "18,00р"
+  },
+  {
+    "categoryTypeId": "fun",
+    "description": "Настольная игра",
+    "id": "25",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Монополия",
+    "price": "18,00р"
+  },
+  {
+    "categoryTypeId": "fun",
+    "description": "Настольная игра",
+    "id": "26",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Монополия",
+    "price": "18,00р"
+  },
+  {
+    "categoryTypeId": "fun",
+    "description": "Настольная игра",
+    "id": "27",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Монополия",
+    "price": "18,00р"
+  },
+  {
+    "categoryTypeId": "fun",
+    "description": "Настольная игра",
+    "id": "28",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Монополия",
+    "price": "18,00р"
+  },
+  {
+    "categoryTypeId": "fun",
+    "description": "Настольная игра",
+    "id": "29",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Монополия",
+    "price": "18,00р"
+  },
+  {
+    "categoryTypeId": "fun",
+    "description": "Настольная игра",
+    "id": "30",
     "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
     "label": "Монополия",
     "price": "18,00р"
@@ -58,7 +242,79 @@
   {
     "categoryTypeId": "souvenirs",
     "description": "Из Египта",
-    "id": "8",
+    "id": "31",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Пирамида",
+    "price": "10,00р"
+  },
+  {
+    "categoryTypeId": "souvenirs",
+    "description": "Из Египта",
+    "id": "32",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Пирамида",
+    "price": "10,00р"
+  },
+  {
+    "categoryTypeId": "souvenirs",
+    "description": "Из Египта",
+    "id": "33",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Пирамида",
+    "price": "10,00р"
+  },
+  {
+    "categoryTypeId": "souvenirs",
+    "description": "Из Египта",
+    "id": "34",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Пирамида",
+    "price": "10,00р"
+  },
+  {
+    "categoryTypeId": "souvenirs",
+    "description": "Из Египта",
+    "id": "35",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Пирамида",
+    "price": "10,00р"
+  },
+  {
+    "categoryTypeId": "souvenirs",
+    "description": "Из Египта",
+    "id": "36",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Пирамида",
+    "price": "10,00р"
+  },
+  {
+    "categoryTypeId": "souvenirs",
+    "description": "Из Египта",
+    "id": "37",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Пирамида",
+    "price": "10,00р"
+  },
+  {
+    "categoryTypeId": "souvenirs",
+    "description": "Из Египта",
+    "id": "38",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Пирамида",
+    "price": "10,00р"
+  },
+  {
+    "categoryTypeId": "souvenirs",
+    "description": "Из Египта",
+    "id": "39",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Пирамида",
+    "price": "10,00р"
+  },
+  {
+    "categoryTypeId": "souvenirs",
+    "description": "Из Египта",
+    "id": "40",
     "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
     "label": "Пирамида",
     "price": "10,00р"
@@ -66,7 +322,79 @@
   {
     "categoryTypeId": "appliances",
     "description": "Лучший в своей линейке",
-    "id": "9",
+    "id": "41",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Samsung A73",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "appliances",
+    "description": "Лучший в своей линейке",
+    "id": "42",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Samsung A73",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "appliances",
+    "description": "Лучший в своей линейке",
+    "id": "43",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Samsung A73",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "appliances",
+    "description": "Лучший в своей линейке",
+    "id": "44",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Samsung A73",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "appliances",
+    "description": "Лучший в своей линейке",
+    "id": "45",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Samsung A73",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "appliances",
+    "description": "Лучший в своей линейке",
+    "id": "46",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Samsung A73",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "appliances",
+    "description": "Лучший в своей линейке",
+    "id": "47",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Samsung A73",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "appliances",
+    "description": "Лучший в своей линейке",
+    "id": "48",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Samsung A73",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "appliances",
+    "description": "Лучший в своей линейке",
+    "id": "49",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Samsung A73",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "appliances",
+    "description": "Лучший в своей линейке",
+    "id": "50",
     "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
     "label": "Samsung A73",
     "price": "1080р"
@@ -74,7 +402,79 @@
   {
     "categoryTypeId": "home",
     "description": "Яркий",
-    "id": "10",
+    "id": "51",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "home",
+    "description": "Яркий",
+    "id": "52",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "home",
+    "description": "Яркий",
+    "id": "53",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "home",
+    "description": "Яркий",
+    "id": "54",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "home",
+    "description": "Яркий",
+    "id": "55",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "home",
+    "description": "Яркий",
+    "id": "56",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "home",
+    "description": "Яркий",
+    "id": "57",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "home",
+    "description": "Яркий",
+    "id": "58",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "home",
+    "description": "Яркий",
+    "id": "59",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "home",
+    "description": "Яркий",
+    "id": "60",
     "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
     "label": "Светильник",
     "price": "1080р"
@@ -82,15 +482,247 @@
   {
     "categoryTypeId": "books",
     "description": "Яркий",
-    "id": "11",
+    "id": "61",
     "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
-    "label": "Светильник",
+    "label": "Книга",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "books",
+    "description": "Яркий",
+    "id": "62",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Книга",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "books",
+    "description": "Яркий",
+    "id": "63",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Книга",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "books",
+    "description": "Яркий",
+    "id": "64",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Книга",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "books",
+    "description": "Яркий",
+    "id": "65",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Книга",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "books",
+    "description": "Яркий",
+    "id": "66",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Книга",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "books",
+    "description": "Яркий",
+    "id": "67",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Книга",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "books",
+    "description": "Яркий",
+    "id": "68",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Книга",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "books",
+    "description": "Яркий",
+    "id": "69",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Книга",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "books",
+    "description": "Яркий",
+    "id": "70",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Книга",
     "price": "1080р"
   },
   {
     "categoryTypeId": "children",
     "description": "Яркий",
-    "id": "12",
+    "id": "71",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Дети",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "children",
+    "description": "Яркий",
+    "id": "72",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Дети",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "children",
+    "description": "Яркий",
+    "id": "73",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Дети",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "children",
+    "description": "Яркий",
+    "id": "74",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Дети",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "children",
+    "description": "Яркий",
+    "id": "75",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Дети",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "children",
+    "description": "Яркий",
+    "id": "76",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Дети",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "children",
+    "description": "Яркий",
+    "id": "77",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Дети",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "children",
+    "description": "Яркий",
+    "id": "78",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Дети",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "children",
+    "description": "Яркий",
+    "id": "79",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Дети",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "children",
+    "description": "Яркий",
+    "id": "80",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Дети",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "children",
+    "description": "Яркий",
+    "id": "81",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Дети",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "office",
+    "description": "Яркий",
+    "id": "82",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Офис",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "office",
+    "description": "Яркий",
+    "id": "83",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Офис",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "office",
+    "description": "Яркий",
+    "id": "84",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Офис",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "office",
+    "description": "Яркий",
+    "id": "85",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Офис",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "office",
+    "description": "Яркий",
+    "id": "86",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Офис",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "office",
+    "description": "Яркий",
+    "id": "87",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Офис",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "office",
+    "description": "Яркий",
+    "id": "88",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Офис",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "office",
+    "description": "Яркий",
+    "id": "89",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Офис",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "office",
+    "description": "Яркий",
+    "id": "90",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Офис",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "office",
+    "description": "Яркий",
+    "id": "91",
     "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
     "label": "Светильник",
     "price": "1080р"
@@ -98,7 +730,7 @@
   {
     "categoryTypeId": "office",
     "description": "Яркий",
-    "id": "13",
+    "id": "92",
     "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
     "label": "Светильник",
     "price": "1080р"
@@ -106,7 +738,87 @@
   {
     "categoryTypeId": "sport",
     "description": "Яркий",
-    "id": "14",
+    "id": "93",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "sport",
+    "description": "Яркий",
+    "id": "94",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "sport",
+    "description": "Яркий",
+    "id": "95",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "sport",
+    "description": "Яркий",
+    "id": "96",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "sport",
+    "description": "Яркий",
+    "id": "97",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "sport",
+    "description": "Яркий",
+    "id": "98",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "sport",
+    "description": "Яркий",
+    "id": "99",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "sport",
+    "description": "Яркий",
+    "id": "100",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "sport",
+    "description": "Яркий",
+    "id": "101",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "sport",
+    "description": "Яркий",
+    "id": "102",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "sport",
+    "description": "Яркий",
+    "id": "103",
     "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
     "label": "Светильник",
     "price": "1080р"
@@ -114,7 +826,79 @@
   {
     "categoryTypeId": "health",
     "description": "Яркий",
-    "id": "14",
+    "id": "104",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "health",
+    "description": "Яркий",
+    "id": "105",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "health",
+    "description": "Яркий",
+    "id": "106",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "health",
+    "description": "Яркий",
+    "id": "107",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "health",
+    "description": "Яркий",
+    "id": "108",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "health",
+    "description": "Яркий",
+    "id": "109",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "health",
+    "description": "Яркий",
+    "id": "110",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "health",
+    "description": "Яркий",
+    "id": "111",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "health",
+    "description": "Яркий",
+    "id": "112",
+    "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
+    "label": "Светильник",
+    "price": "1080р"
+  },
+  {
+    "categoryTypeId": "health",
+    "description": "Яркий",
+    "id": "113",
     "img": "https://images.unsplash.com/photo-1655399344241-a6ab29ebc5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzcwMDYzMg&ixlib=rb-4.0.3&q=80&w=1080",
     "label": "Светильник",
     "price": "1080р"

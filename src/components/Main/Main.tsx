@@ -1,7 +1,10 @@
 import {Menu, GoodCategory} from '../index';
-import {categories} from '../../api';
+import categories from '../../api/categories.json';
 
 export const Main = () => {
+
+
+
 return (
     <div>
         <Menu/>

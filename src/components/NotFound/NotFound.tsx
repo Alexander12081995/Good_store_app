@@ -1,7 +1,11 @@
+import {Link} from "react-router-dom";
+import css from './notFound.module.css';
+
 export const NotFound = () => {
     return (
-        <div>
-            <p>Страница не найдена</p>
+        <div className={css.container}>
+            <p className={css.text}>Страница на данный момент не существует.</p>
+            <Link to="" className={css.back}>Вернуться на главную</Link>
         </div>
     )
 }
