@@ -6,3 +6,4 @@ const get = <T>(mock: T): Promise<T> => new Promise((resolve) => setTimeout(() =
 export const getProducts = () => get(products);
 
 export const getCategories = () => get(categories);
+

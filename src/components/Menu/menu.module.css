@@ -1,7 +1,6 @@
 .container {
     display: flex;
     padding: 0 0 30px 30px;
-    background-color: azure;
 }
 .list {
     width: 300px;
