@@ -7,3 +7,4 @@ export {Main} from './Main';
 export {Category} from './Category';
 export {ProductPage} from './ProductPage';
 export {Footer} from './Footer';
+export {Loader} from './Common';
