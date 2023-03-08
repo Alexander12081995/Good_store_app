@@ -1,11 +1,12 @@
 import {Link} from "react-router-dom";
 import {CarouselImg} from '../Common';
 import css from './menu.module.css';
-import categories from '../../api/categories.json';
+import {useSelector} from "react-redux";
+import {getCategories} from "../../store/categories/selectors";
 
 export const Menu = () => {
 
-
+    const categories = useSelector(getCategories);
 
     return (
         <div className={css.container}>

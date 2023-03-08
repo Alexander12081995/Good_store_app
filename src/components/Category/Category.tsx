@@ -18,7 +18,7 @@ export const Category = () => {
     const fetchCategoriesStore = useCallback(() => dispatch(actions.fetchCategory() as any), [dispatch])
     useEffect(() => {
         fetchCategoriesStore()
-    })
+    }, [])
 
     const {cat} = useParams()
     const category = categories.find((category: Cat) => category.type === cat)
