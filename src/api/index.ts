@@ -13,13 +13,13 @@ const get = (url: string) => {
 
     return fetch(fullUrl).then((data) => {
         if(data.ok) {
-           return  data.json().then((r) => r.json())
+           return  data.json()
         }
         throw new Error ('oops')
     })
 }
 
-export const getProducts = (): Promise<Good[]> => get("/api/goods");
+export const getProducts = (): Promise<{items: Good[], total: number}> => get("/api/goods");
 
-export const getCategories = (): Promise<Category[]> => get("/api/categories");
+export const getCategories = (): Promise<{categories: Category[] }> => get("/api/categories");
 

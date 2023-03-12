@@ -28,7 +28,7 @@ const slice = createSlice({
         })
         builder.addCase(fetchCategory.fulfilled, (state, action) => {
             state.loadStatus = LOAD_STATUSES.LOADED
-            state.categories = action.payload
+            state.categories = action.payload.categories
         })
     }
 })

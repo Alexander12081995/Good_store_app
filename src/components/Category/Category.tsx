@@ -13,8 +13,9 @@ import {HomeOutlined} from "@ant-design/icons";
 export const Category = () => {
 
     const categories = useSelector(getCategories)
-    const dispatch = useDispatch()
     const loadStatusCategories = useSelector(getCategoriesLoadStatus)
+    const dispatch = useDispatch()
+
 
     const fetchCategoriesStore = () => dispatch(actions.fetchCategory() as any)
     useEffect(() => {
@@ -23,7 +24,7 @@ export const Category = () => {
 
     const {type} = useParams()
     const category = categories.find((category: CategoryTypes) => category.type === type)
-    {loadStatusCategories === LOAD_STATUSES.LOADED && console.log(categories)}
+    {loadStatusCategories === LOAD_STATUSES.LOADED && console.log(type)}
 
 
     return (
@@ -38,7 +39,7 @@ export const Category = () => {
                             </Link>
                         </Breadcrumb.Item>
                         <Breadcrumb.Item>
-                            {category!.label}
+                            {category?.label}
                         </Breadcrumb.Item>
                     </Breadcrumb>
 
