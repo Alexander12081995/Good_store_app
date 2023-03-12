@@ -12,5 +12,4 @@ ReactDOM
               <App/>
           </Router>
       </Provider>
-
   );

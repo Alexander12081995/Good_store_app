@@ -11,7 +11,10 @@
     font-style: italic;
 }
 .category {
-    margin-top: 15px;
+    padding: 12px 0;
+}
+.category:hover {
+    background-color: #a1a1a1;
 }
 .carouselBlock {
     width: 1100px;

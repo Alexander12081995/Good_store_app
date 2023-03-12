@@ -1,8 +1,8 @@
-import {FC, useCallback, useEffect} from 'react';
+import {FC, useEffect} from 'react';
 import {Category} from '../../types';
 import {Good} from '../../types';
 import {Link} from "react-router-dom";
-import {Card} from '../index';
+import {Card} from '../Card';
 import css from './good.module.css';
 import {useDispatch, useSelector} from "react-redux";
 import {getProducts} from "../../store/products/selector";
@@ -13,7 +13,7 @@ export const GoodCategory: FC<Category> = ({type, label, id}) => {
     const products = useSelector(getProducts)
     const dispatch = useDispatch()
 
-    const fetchProductsStore = useCallback(() => dispatch(actions.fetchProducts() as any), [dispatch])
+    const fetchProductsStore = () => dispatch(actions.fetchProducts() as any)
     useEffect(() => {fetchProductsStore()}, [])
 
     return (

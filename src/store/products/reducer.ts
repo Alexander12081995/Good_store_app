@@ -7,13 +7,13 @@ const PRODUCTS_NAME = 'products';
 
 const fetchProducts = createAsyncThunk(PRODUCTS_NAME, getProducts);
 
-interface State {
+export interface State {
     products: Good[];
     loadStatus: string
 }
 
 const initialState: State = {
-    products: [{id: "", label: "", img: "", description: "", price: "", categoryTypeId: ""}],
+    products: [],
     loadStatus: LOAD_STATUSES.UNKNOWN
 }
 

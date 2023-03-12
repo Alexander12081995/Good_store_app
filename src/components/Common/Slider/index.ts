@@ -1,1 +1,1 @@
-export {CarouselImg} from './Carousel';
+export {Slider} from './Slider';

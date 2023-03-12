@@ -11,7 +11,7 @@ export interface State {
     loadStatus: string;
 }
 const initialState: State = {
-    categories: [{id: "", type: "", label: ""}],
+    categories: [],
     loadStatus: LOAD_STATUSES.UNKNOWN
 }
 

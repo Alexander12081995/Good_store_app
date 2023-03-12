@@ -1,13 +1,13 @@
 export interface Category {
-    id?: string;
+    id: string;
     type: string;
-    label?: string;
+    label: string;
 }
 
 export interface Good {
-    categoryTypeId?: string;
+    categoryTypeId: string;
     description: string;
-    id?: string;
+    id: string;
     img: string;
     label: string;
     price: string;

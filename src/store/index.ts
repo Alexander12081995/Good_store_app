@@ -4,7 +4,7 @@ import {combineReducers, configureStore} from "@reduxjs/toolkit";
 
 const reducer = combineReducers({
     categories: reducerCategories,
-    products: reducerProducts
+    products: reducerProducts,
 })
 
 export const store = configureStore({reducer: reducer})
