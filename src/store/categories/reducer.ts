@@ -1,6 +1,6 @@
 import {getCategories} from '../../api';
 import {Category, LOAD_STATUSES} from '../../types';
-import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+import {createAsyncThunk, createSlice, PayloadAction} from "@reduxjs/toolkit";
 
 const CATEGORIES_NAME = 'category';
 
@@ -20,10 +20,10 @@ const slice = createSlice({
     initialState,
     reducers: {},
     extraReducers: (builder) => {
-        builder.addCase(fetchCategory.pending, (state, action) => {
+        builder.addCase(fetchCategory.pending, (state) => {
             state.loadStatus = LOAD_STATUSES.LOADING
         })
-        builder.addCase(fetchCategory.rejected, (state, action) => {
+        builder.addCase(fetchCategory.rejected, (state) => {
             state.loadStatus = LOAD_STATUSES.ERROR
         })
         builder.addCase(fetchCategory.fulfilled, (state, action) => {

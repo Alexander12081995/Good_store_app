@@ -23,6 +23,7 @@ export const Category = () => {
 
     const {type} = useParams()
     const category = categories.find((category: CategoryTypes) => category.type === type)
+    {loadStatusCategories === LOAD_STATUSES.LOADED && console.log(categories)}
 
 
     return (
