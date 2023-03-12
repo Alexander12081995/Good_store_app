@@ -4,3 +4,7 @@ export {Menu} from './Menu';
 export {Card} from './Card';
 export {GoodCategory} from './GoodCategory';
 export {Main} from './Main';
+export {Category} from './Category';
+export {ProductPage} from './ProductPage';
+export {Footer} from './Footer';
+export {Loader} from './Common';

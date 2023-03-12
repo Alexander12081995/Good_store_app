@@ -1,7 +1,12 @@
 .cardWrapper {
     position: relative;
-    width: 176px;
-    height: 176px;
+    width: 200px;
+    height: 250px;
+    color: black;
+}
+.cardWrapper:hover {
+    bottom: 3%;
+    box-shadow: 10px 5px 5px #b9b9b9;
 }
 
 .img {

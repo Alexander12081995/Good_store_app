@@ -1,11 +1,13 @@
 import {Link} from "react-router-dom";
-import headerLogo from '../../images/header_logo.jpg';
+import headerLogo from '../../images/header_logo.png';
 import {Button, Input} from 'antd';
 import css from './header.module.css';
 
 const {Search} = Input
 
 export const Header = () => {
+
+
     return (
         <div className={css.container}>
             <Link to=''>

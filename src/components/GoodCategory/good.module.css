@@ -12,7 +12,9 @@
 }
 .listCard {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
     flex-wrap: wrap;
     list-style: none;
 }

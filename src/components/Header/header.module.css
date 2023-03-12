@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    background-color: aliceblue;
 }
 .logo {
     max-width: 150px;
@@ -21,5 +20,14 @@
 
 }
 .basket {
-    color: black;
+    font-weight: 700;
+    color: #cd4500;
+    text-decoration: none;
+}
+.basket:hover {
+    text-decoration: underline;
+}
+.counterBasket {
+    padding: 2px;
+    border: 1px solid black;
 }
