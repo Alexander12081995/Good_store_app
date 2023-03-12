@@ -1,7 +1,7 @@
 import products from '../../api/products.json';
 import {getProducts} from '../../api';
 import {LOAD_STATUSES, Good} from '../../types';
-import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+import {createAsyncThunk, createSlice, PayloadAction} from "@reduxjs/toolkit";
 
 const PRODUCTS_NAME = 'products';
 
@@ -28,9 +28,9 @@ export const slice = createSlice({
         builder.addCase(fetchProducts.rejected, (state) => {
             state.loadStatus = LOAD_STATUSES.ERROR
         })
-        builder.addCase(fetchProducts.fulfilled, (state, action) => {
+        builder.addCase(fetchProducts.fulfilled, (state, action: PayloadAction<{items: Good[], total: number}>) => {
             state.loadStatus = LOAD_STATUSES.LOADED
-            state.products = action.payload
+            state.products = action.payload.items
         })
     }
 })

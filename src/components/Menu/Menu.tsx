@@ -1,12 +1,15 @@
 import {Link} from "react-router-dom";
 import {Slider} from '../Common';
 import css from './menu.module.css';
-import {useSelector} from "react-redux";
-import {getCategories} from "../../store/categories/selectors";
+import {useDispatch, useSelector} from "react-redux";
+import {getCategories, getCategoriesLoadStatus} from "../../store/categories/selectors";
 import {Carousel} from "antd";
 import main1 from "../../images/main1.jpg";
 import main2 from "../../images/main2.jpg";
 import main3 from "../../images/main3.jpg";
+import {LOAD_STATUSES} from "../../types";
+import {actions} from "../../store/categories/reducer";
+import {useEffect} from "react";
 
 const dataSlider = [
     {id: "1", img: main1, alt: "img", title: "Книги со скидкой 20%", btn: "Выбрать книги"},
@@ -17,9 +20,14 @@ const dataSlider = [
 export const Menu = () => {
 
     const categories = useSelector(getCategories);
+    const loadStatusCategories = useSelector(getCategoriesLoadStatus)
+    const dispatch = useDispatch()
+
+    const fetchCategoriesStore = () => dispatch(actions.fetchCategory() as any)
+    useEffect(() => {fetchCategoriesStore()}, [])
 
     return (
-        <div className={css.container}>
+        <div>{loadStatusCategories === LOAD_STATUSES.LOADED && <div className={css.container}>
             <ul className={css.list}>
                 {categories.map((category) => (
                     <Link to={`/categories/${category.type}`} key={category.id} className={css.categories}>
@@ -32,6 +40,6 @@ export const Menu = () => {
                     {dataSlider.map((item) => <Slider key={item.id} id={item.id} img={item.img} alt={item.alt} title={item.title} btn={item.btn}/>)}
                 </Carousel>
             </div>
-        </div>
+        </div>}</div>
     )
 }
