@@ -1,29 +1,28 @@
-import {Menu, GoodCategory} from '../index';
-import {useDispatch, useSelector} from "react-redux";
-import {getCategories, getCategoriesLoadStatus} from "../../store/categories/selectors";
+import {Menu, GoodCategory, Loader} from '../index';
+import {useSelector} from "react-redux";
+import {actions as actionsPopularCategories} from '../../store/popularCategories/reducer';
 import {useEffect} from "react";
-import {actions} from "../../store/categories/reducer";
 import {LOAD_STATUSES} from "../../types";
+import {getPopularCategories, getPopularCategoriesLoadStatus} from "../../store/popularCategories/selectors";
+import {useAppDispatch} from "../../hooks/useAppDispatch";
 
 export const Main = () => {
 
-    const categories = useSelector(getCategories);
-    const loadStatusCategories = useSelector(getCategoriesLoadStatus)
-    const dispatch = useDispatch()
-
-    const fetchCategoriesStore = () => dispatch(actions.fetchCategory() as any)
-    useEffect(() => {fetchCategoriesStore()}, [])
-
-return (
-    <div>
-        <Menu/>
-
-        {loadStatusCategories === LOAD_STATUSES.LOADED && <div>{
-            categories.map((category) =>
-                <GoodCategory key={category.id} id={category.id} type={category.type} label={category.label}/>)
-        }</div>}
+    const popularCategoriesLoadStatus = useSelector(getPopularCategoriesLoadStatus)
+    const popularCategories = useSelector(getPopularCategories)
+    const dispatch = useAppDispatch()
 
 
-    </div>
-)
+
+    useEffect(() => {
+        dispatch(actionsPopularCategories.fetchPopularCategories())
+    }, [])
+
+    return (
+        <div>
+            <Menu/>
+            <Loader isLoading={popularCategoriesLoadStatus === LOAD_STATUSES.LOADING}/>
+            {popularCategories.map((category) => <GoodCategory key={category.category.id} id={category.category.id} type={category.category.type} label={category.category.label} items={category.items}/>)}
+        </div>
+    )
 }

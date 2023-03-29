@@ -2,10 +2,34 @@ import {Link} from "react-router-dom";
 import headerLogo from '../../images/header_logo.png';
 import {Button, Input} from 'antd';
 import css from './header.module.css';
+import {useCallback, useEffect, useState} from "react";
+import {actions} from "../../store/products/reducer";
+import debounce from 'lodash/debounce';
+import {useAppDispatch} from "../../hooks/useAppDispatch";
 
 const {Search} = Input
 
+interface Params {
+    text: string;
+}
+
 export const Header = () => {
+    const [params, setParams] = useState({
+        text: ""
+    })
+
+    const dispatch = useAppDispatch()
+    const updateParams = (nextParams: Partial<Params>) => {
+        setParams((prevParams) => ({...prevParams, ...nextParams}));
+    };
+    const fetchGetProductsDebounce = useCallback(debounce((params: Params): void =>
+    dispatch(actions.fetchProducts(params) as any), 2_000), [dispatch])
+
+
+    useEffect(() => {
+        fetchGetProductsDebounce(params)
+    },[params])
+
 
 
     return (
@@ -15,9 +39,12 @@ export const Header = () => {
                     <img src={headerLogo} alt={'logo'} className={css.logoImg}/>
                 </div>
             </Link>
-            <Search placeholder="Введите название товара" className={css.search}/>
-            <Button className={css.login}>Войти</Button>
-            <Link to='/basket' className={css.basket}>Корзина</Link>
+            <Search  onChange={(e) => updateParams({text: e.target.value})} placeholder="Введите название товара" className={css.search}/>
+            <Link to={"/login"}>
+                <Button className={css.login}>Войти</Button>
+            </Link>
+
+            <Link to='/cart' className={css.basket}>Корзина</Link>
         </div>
     )
 }

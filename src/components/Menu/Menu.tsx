@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import {Slider} from '../Common';
 import css from './menu.module.css';
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 import {getCategories, getCategoriesLoadStatus} from "../../store/categories/selectors";
 import {Carousel} from "antd";
 import main1 from "../../images/main1.jpg";
@@ -10,6 +10,7 @@ import main3 from "../../images/main3.jpg";
 import {LOAD_STATUSES} from "../../types";
 import {actions} from "../../store/categories/reducer";
 import {useEffect} from "react";
+import {useAppDispatch} from "../../hooks/useAppDispatch";
 
 const dataSlider = [
     {id: "1", img: main1, alt: "img", title: "Книги со скидкой 20%", btn: "Выбрать книги"},
@@ -21,9 +22,9 @@ export const Menu = () => {
 
     const categories = useSelector(getCategories);
     const loadStatusCategories = useSelector(getCategoriesLoadStatus)
-    const dispatch = useDispatch()
+    const dispatch = useAppDispatch()
 
-    const fetchCategoriesStore = () => dispatch(actions.fetchCategory() as any)
+    const fetchCategoriesStore = () => dispatch(actions.fetchCategory())
     useEffect(() => {fetchCategoriesStore()}, [])
 
     return (
@@ -34,6 +35,7 @@ export const Menu = () => {
                         <li className={css.category}>{category.label}</li>
                     </Link>
                 ))}
+                {true && <div className={css.allGoods}><Link to={'/goods'}>Все товары</Link></div> }
             </ul>
             <div className={css.carouselBlock}>
                 <Carousel autoplay>

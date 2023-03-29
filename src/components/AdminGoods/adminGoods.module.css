@@ -1,0 +1,19 @@
+.img {
+    width: 150px;
+    height: 200px;
+}
+.blockParams {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+    margin: 40px auto 20px;
+}
+.sort {
+    width: 40%;
+}
+.price {
+    margin: 40px auto 0;
+    width: 80%;
+    text-align: center;
+}

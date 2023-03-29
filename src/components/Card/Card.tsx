@@ -12,7 +12,6 @@ export const Card: FC<Good> =
                 <Link to={`/good/${id}`}>
                     <img src={img} alt={'img'} className={css.img}/>
                     <h3 className={css.title}>{label}</h3>
-                    <p className={css.description}>{description}</p>
                     <p className={css.price}>{price}</p>
                 </Link>
             </div>

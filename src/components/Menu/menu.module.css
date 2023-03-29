@@ -16,6 +16,13 @@
 .category:hover {
     background-color: #a1a1a1;
 }
+.allGoods {
+    font-style: italic;
+    padding: 10px 0;
+}
+.allGoods:hover {
+    background-color: #a1a1a1;
+}
 .carouselBlock {
     width: 1100px;
     height: 450px;

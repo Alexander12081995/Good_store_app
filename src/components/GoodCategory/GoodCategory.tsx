@@ -1,20 +1,18 @@
-import {FC, useEffect} from 'react';
+import {FC} from 'react';
 import {Category} from '../../types';
 import {Good} from '../../types';
 import {Link} from "react-router-dom";
 import {Card} from '../Card';
 import css from './good.module.css';
-import {useDispatch, useSelector} from "react-redux";
-import {getProducts} from "../../store/products/selector";
-import {actions} from "../../store/products/reducer";
 
-export const GoodCategory: FC<Category> = ({type, label, id}) => {
+interface CategoryProps {
+    type: string;
+    id: string;
+    label: string;
+    items: Good[];
+}
 
-    const products = useSelector(getProducts)
-    const dispatch = useDispatch()
-
-    const fetchProductsStore = () => dispatch(actions.fetchProducts() as any)
-    useEffect(() => {fetchProductsStore()}, [])
+export const GoodCategory: FC<CategoryProps> = ({type, id, label, items}) => {
 
     return (
         <div className={css.container}>
@@ -22,9 +20,7 @@ export const GoodCategory: FC<Category> = ({type, label, id}) => {
                     <h3 className={css.title}>{label}</h3>
                 </Link>
                 <ul className={css.listCard}>
-                    {products
-                        .filter((product: Good) => product.categoryTypeId === type)
-                        .map((product) => (
+                    {items.map((product) => (
                             <li key={product.id} >
                                 <Card img={product.img}
                                       id={product.id}

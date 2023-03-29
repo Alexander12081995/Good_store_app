@@ -19,3 +19,9 @@ export enum LOAD_STATUSES {
     ERROR = "ERROR",
     UNKNOWN = "UNKNOWN"
 }
+
+export interface GoodInCart {
+    good: Good;
+    count: number;
+    id: string;
+}

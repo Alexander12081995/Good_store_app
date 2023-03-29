@@ -1,4 +1,3 @@
-import products from '../../api/products.json';
 import {getProducts} from '../../api';
 import {LOAD_STATUSES, Good} from '../../types';
 import {createAsyncThunk, createSlice, PayloadAction} from "@reduxjs/toolkit";
@@ -9,12 +8,14 @@ const fetchProducts = createAsyncThunk(PRODUCTS_NAME, getProducts);
 
 export interface State {
     products: Good[];
-    loadStatus: string
+    loadStatus: string;
+    total: number;
 }
 
 const initialState: State = {
     products: [],
-    loadStatus: LOAD_STATUSES.UNKNOWN
+    loadStatus: LOAD_STATUSES.UNKNOWN,
+    total: 0,
 }
 
 export const slice = createSlice({
@@ -31,6 +32,7 @@ export const slice = createSlice({
         builder.addCase(fetchProducts.fulfilled, (state, action: PayloadAction<{items: Good[], total: number}>) => {
             state.loadStatus = LOAD_STATUSES.LOADED
             state.products = action.payload.items
+            state.total = action.payload.total
         })
     }
 })

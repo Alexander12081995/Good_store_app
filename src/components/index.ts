@@ -8,3 +8,7 @@ export {Category} from './Category';
 export {ProductPage} from './ProductPage';
 export {Footer} from './Footer';
 export {Loader} from './Common';
+export {Login, Registration} from "./Avorization";
+export {Cart} from "./Cart";
+export {AdminGoods} from "./AdminGoods";
+

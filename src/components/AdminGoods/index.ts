@@ -1,0 +1,1 @@
+export {AdminGoods} from "./AdminGoods";
