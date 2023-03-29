@@ -11,6 +11,7 @@ import {LOAD_STATUSES} from "../../types";
 import {actions} from "../../store/categories/reducer";
 import {useEffect} from "react";
 import {useAppDispatch} from "../../hooks/useAppDispatch";
+import {getLogin} from "../../store/login/selector";
 
 const dataSlider = [
     {id: "1", img: main1, alt: "img", title: "Книги со скидкой 20%", btn: "Выбрать книги"},
@@ -22,7 +23,10 @@ export const Menu = () => {
 
     const categories = useSelector(getCategories);
     const loadStatusCategories = useSelector(getCategoriesLoadStatus)
+    const isAuth = useSelector(getLogin)
     const dispatch = useAppDispatch()
+
+    console.log(isAuth)
 
     const fetchCategoriesStore = () => dispatch(actions.fetchCategory())
     useEffect(() => {fetchCategoriesStore()}, [])
@@ -35,7 +39,7 @@ export const Menu = () => {
                         <li className={css.category}>{category.label}</li>
                     </Link>
                 ))}
-                {true && <div className={css.allGoods}><Link to={'/goods'}>Все товары</Link></div> }
+                {isAuth && <div className={css.allGoods}><Link to={'/goods'}>Все товары</Link></div> }
             </ul>
             <div className={css.carouselBlock}>
                 <Carousel autoplay>

@@ -6,6 +6,8 @@ import {useCallback, useEffect, useState} from "react";
 import {actions} from "../../store/products/reducer";
 import debounce from 'lodash/debounce';
 import {useAppDispatch} from "../../hooks/useAppDispatch";
+import {getLogin} from "../../store/login/selector";
+import {useSelector} from "react-redux";
 
 const {Search} = Input
 
@@ -17,7 +19,7 @@ export const Header = () => {
     const [params, setParams] = useState({
         text: ""
     })
-
+    const isAuth = useSelector(getLogin)
     const dispatch = useAppDispatch()
     const updateParams = (nextParams: Partial<Params>) => {
         setParams((prevParams) => ({...prevParams, ...nextParams}));
@@ -25,6 +27,10 @@ export const Header = () => {
     const fetchGetProductsDebounce = useCallback(debounce((params: Params): void =>
     dispatch(actions.fetchProducts(params) as any), 2_000), [dispatch])
 
+    const handlerButton = () => {
+        localStorage.setItem("userToken", "");
+        window.location.reload()
+    }
 
     useEffect(() => {
         fetchGetProductsDebounce(params)
@@ -40,9 +46,10 @@ export const Header = () => {
                 </div>
             </Link>
             <Search  onChange={(e) => updateParams({text: e.target.value})} placeholder="Введите название товара" className={css.search}/>
-            <Link to={"/login"}>
+            {isAuth && <Button onClick={handlerButton} className={css.login}>Выйти</Button>}
+            {!isAuth && <Link to={"/login"}>
                 <Button className={css.login}>Войти</Button>
-            </Link>
+            </Link>}
 
             <Link to='/cart' className={css.basket}>Корзина</Link>
         </div>
