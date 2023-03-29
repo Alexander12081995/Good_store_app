@@ -53,7 +53,6 @@ const post = (url: string, body: Record<string, unknown>) => {
 //@ts-ignore
 export const login = (credentials: { login: string, password: string }): Promise<{ login: string; token: string }> => post("/api/login", credentials)
 
-//@ts-ignore
-window.login = login;
+export const registration = (body: any): any => post("/api/registration", body)
 
 

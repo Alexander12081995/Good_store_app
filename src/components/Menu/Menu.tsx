@@ -26,13 +26,12 @@ export const Menu = () => {
     const isAuth = useSelector(getLogin)
     const dispatch = useAppDispatch()
 
-    console.log(isAuth)
-
     const fetchCategoriesStore = () => dispatch(actions.fetchCategory())
     useEffect(() => {fetchCategoriesStore()}, [])
 
     return (
-        <div>{loadStatusCategories === LOAD_STATUSES.LOADED && <div className={css.container}>
+        <div>
+            {loadStatusCategories === LOAD_STATUSES.LOADED && <div className={css.container}>
             <ul className={css.list}>
                 {categories.map((category) => (
                     <Link to={`/categories/${category.type}`} key={category.id} className={css.categories}>
@@ -46,6 +45,7 @@ export const Menu = () => {
                     {dataSlider.map((item) => <Slider key={item.id} id={item.id} img={item.img} alt={item.alt} title={item.title} btn={item.btn}/>)}
                 </Carousel>
             </div>
-        </div>}</div>
+        </div>}
+        </div>
     )
 }

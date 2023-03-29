@@ -1,4 +1,4 @@
-import {dataRegister} from "./registrationType";
+import {dataRegister, registrationFields} from "./registrationType";
 import {useSelector} from "react-redux";
 import {getCategories} from "../../../store/categories/selectors";
 import {useAppDispatch} from "../../../hooks/useAppDispatch";
@@ -9,6 +9,7 @@ import {Input, Radio, Switch, DatePicker, Button} from "antd";
 import dayjs from "dayjs";
 import {Link} from "react-router-dom";
 import css from "./registration.module.css"
+import {registrationThunk} from "../../../store/registration/reducer";
 
 export const Registration = () => {
 
@@ -23,7 +24,14 @@ export const Registration = () => {
         <div className={css.form}>
             <Formik initialValues={dataRegister.initialValues}
                     onSubmit={(values, {resetForm}) => {
-                        console.log(values)
+                        const data = Object.keys(values).reduce((acc: {}, key: string) => {
+                            if (registrationFields.includes(key)) {
+                                //@ts-ignore
+                                acc[key] = values[key]
+                            }
+                            return acc
+                        }, {})
+                        dispatch(registrationThunk({...data, login: values.email, secret: {type: values.secretQuestion, answer: values.answer}}))
                         resetForm()
                     }}
                     validateOnBlur={false}
@@ -68,8 +76,8 @@ export const Registration = () => {
                             </div>
                             <div className={css.groupInput}>
                                 <span>Подпсаься на новости OZ.by</span>
-                                <Switch checked={values.sendNotification}
-                                        onChange={(value) => setFieldValue('sendNotification', value)}/>
+                                <Switch checked={values.isSubscribe}
+                                        onChange={(value) => setFieldValue('isSubscribe', value)}/>
                             </div>
 
                             <div className={css.groupInput}>

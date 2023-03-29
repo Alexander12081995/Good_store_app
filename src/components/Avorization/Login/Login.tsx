@@ -2,15 +2,12 @@ import {Input, Button} from 'antd';
 import css from "./login.module.css";
 import {Link} from "react-router-dom";
 import {useState} from "react";
-import {getLogin} from "../../../store/login/selector";
-import {useSelector} from "react-redux";
 import {useAppDispatch} from "../../../hooks/useAppDispatch";
 import {actions} from "../../../store/login/reducer";
 import {useNavigate} from "react-router";
 
 export const Login = () => {
 
-    const isAuth = useSelector(getLogin)
     const dispatch = useAppDispatch()
     const navigate = useNavigate()
 

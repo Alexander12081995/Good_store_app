@@ -17,3 +17,9 @@
     width: 80%;
     text-align: center;
 }
+.textAdmin {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
