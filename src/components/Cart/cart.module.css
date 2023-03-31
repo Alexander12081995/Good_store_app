@@ -1,0 +1,14 @@
+.cart{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.groupCount {
+    display: flex;
+    align-items: baseline;
+    column-gap: 20px;
+    font-size: 30px;
+
+}

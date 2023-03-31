@@ -1,41 +1,48 @@
 import {Link} from "react-router-dom";
 import headerLogo from '../../images/header_logo.png';
-import {Button, Input} from 'antd';
+import {Button, AutoComplete} from 'antd';
 import css from './header.module.css';
 import {useCallback, useEffect, useState} from "react";
-import {actions} from "../../store/products/reducer";
 import debounce from 'lodash/debounce';
 import {useAppDispatch} from "../../hooks/useAppDispatch";
 import {getLogin} from "../../store/login/selector";
 import {useSelector} from "react-redux";
+import {getCommonCount} from "../../store/cart/selector";
+import {Good} from "../../types";
+import {useNavigate} from "react-router";
+import {getProducts} from "../../api";
 
-const {Search} = Input
 
 interface Params {
     text: string;
 }
 
 export const Header = () => {
-    const [params, setParams] = useState({
-        text: ""
-    })
-    const isAuth = useSelector(getLogin)
-    const dispatch = useAppDispatch()
-    const updateParams = (nextParams: Partial<Params>) => {
-        setParams((prevParams) => ({...prevParams, ...nextParams}));
+    const [params, setParams] = useState<Params>({ text: "" });
+    const [products, setProducts] = useState<Good[]>([])
+
+    const isAuth = useSelector(getLogin);
+    const navigate = useNavigate()
+    const dispatch = useAppDispatch();
+    const commonCount = useSelector(getCommonCount);
+
+    const updateParams = (value: string) => {
+        setParams((prevParams) => ({ ...prevParams, text: value }));
     };
-    const fetchGetProductsDebounce = useCallback(debounce((params: Params): void =>
-    dispatch(actions.fetchProducts(params) as any), 2_000), [dispatch])
+    // const fetchGetProductsDebounce = useCallback(debounce((params: Params): void =>
+    //     dispatch(actions.fetchProducts(params) as any).then((data: { total: number, items: Good[] }) => setProducts(data.items)), 2_000), []);
+
+
+    const fetchGetProductsDebounce = useCallback(debounce((params) => getProducts(params).then(data => setProducts(data.items)), 1500), [])
 
     const handlerButton = () => {
         localStorage.setItem("userToken", "");
         window.location.reload()
-    }
+    };
 
     useEffect(() => {
         fetchGetProductsDebounce(params)
-    },[params])
-
+    }, [params]);
 
 
     return (
@@ -45,13 +52,26 @@ export const Header = () => {
                     <img src={headerLogo} alt={'logo'} className={css.logoImg}/>
                 </div>
             </Link>
-            <Search  onChange={(e) => updateParams({text: e.target.value})} placeholder="Введите название товара" className={css.search}/>
+            <AutoComplete
+                className={css.search}
+                placeholder="Введите название товара"
+                allowClear={true}
+                options={(products || []).map((product) => ({
+                    key: product.id,
+                    value: product.label,
+                    label: product.label
+                }))}
+                filterOption={true}
+                onSelect={(_, {key}) => navigate(`/good/${key}`)}
+                onChange={updateParams}
+            />
             {isAuth && <Button onClick={handlerButton} className={css.login}>Выйти</Button>}
             {!isAuth && <Link to={"/login"}>
                 <Button className={css.login}>Войти</Button>
             </Link>}
 
             <Link to='/cart' className={css.basket}>Корзина</Link>
+            {commonCount >= 1 && <span className={css.commonCount}>{commonCount}</span>}
         </div>
     )
 }

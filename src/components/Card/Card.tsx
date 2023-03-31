@@ -8,12 +8,12 @@ export const Card: FC<Good> =
 
 
     return (
+        <Link to={`/good/${id}`}>
             <div className={css.cardWrapper}>
-                <Link to={`/good/${id}`}>
                     <img src={img} alt={'img'} className={css.img}/>
                     <h3 className={css.title}>{label}</h3>
                     <p className={css.price}>{price}</p>
-                </Link>
             </div>
+        </Link>
         )
     }

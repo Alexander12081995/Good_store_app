@@ -40,3 +40,9 @@
     margin-left: 30px;
     font-size: 19px;
 }
+.inCart {
+    border: 1px solid orange;
+}
+.inCart span {
+    color: orange;
+}

@@ -38,7 +38,7 @@ export const Menu = () => {
                         <li className={css.category}>{category.label}</li>
                     </Link>
                 ))}
-                {isAuth && <div className={css.allGoods}><Link to={'/goods'}>Все товары</Link></div> }
+                {isAuth && <Link to={'/goods'}><div className={css.allGoods}>Все товары</div></Link> }
             </ul>
             <div className={css.carouselBlock}>
                 <Carousel autoplay>

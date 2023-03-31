@@ -3,6 +3,7 @@ import {reducer as reducerProducts} from './products/reducer';
 import {reducer as reducerPopularCategories} from './popularCategories/reducer';
 import {reducer as reducerGoodInCart} from "./cart/reducer";
 import {reducer as reducerLogin} from "./login/reducer";
+import {reducer as reducerRegistration} from "./registration/reducer";
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
 
 const reducer = combineReducers({
@@ -11,6 +12,7 @@ const reducer = combineReducers({
     popularCategories: reducerPopularCategories,
     goodInCart: reducerGoodInCart,
     login: reducerLogin,
+    registration: reducerRegistration,
 })
 
 export const store = configureStore({reducer: reducer});

@@ -37,22 +37,44 @@ export const getCart = (): Promise<GoodInCart[]> =>
 let token = ""
 
 const post = (url: string, body: Record<string, unknown>) => {
-    fetch(new URL(url, BASE_URL), {method: "POST", body: JSON.stringify(body)})
+    return fetch(new URL(url, BASE_URL), {method: "POST", body: JSON.stringify(body)})
         .then((data) => {
-            if (data.status !== 200) throw Error(String(data.status))
+            // if (data.status !== 200) throw Error(String(data.status))
+            console.log('data', data)
             if (data.ok) {
                 return data.json();
             }
         })
-        .then((response) => {
-            if (response) token = response.token
-            localStorage.setItem("userToken", token)
-            return response
-        })
+        // .then((response) => {
+        //     console.log('reapToken', response)
+        //
+        //     if (response) token = response.token
+        //     localStorage.setItem("userToken", token)
+        //     return response
+        // })
 }
-//@ts-ignore
+
 export const login = (credentials: { login: string, password: string }): Promise<{ login: string; token: string }> => post("/api/login", credentials)
 
 export const registration = (body: any): any => post("/api/registration", body)
+
+const postCart = (url: string, body: Record<string, unknown>) => {
+    return fetch(new URL(url, BASE_URL), {
+        method: "PUT",
+        body: JSON.stringify(body),
+        // headers: {"Content-Type": "application/json"}
+    })
+        .then((data) => {
+            if(data.ok) {
+                return data.json()
+            }
+            throw new Error('oops')
+        })
+}
+
+
+export const addCart = (body: {good?: Good, count?: number, id?: string}): Promise<GoodInCart[]> => postCart("/api/cart", body)
+
+
 
 

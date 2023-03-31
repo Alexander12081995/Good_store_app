@@ -5,7 +5,7 @@ import {LOAD_STATUSES} from "../../types";
 
 const SLICE_NAME = "user_registration"
 
-export const registrationThunk = createAsyncThunk(SLICE_NAME, registration)
+export const registrationThunk = createAsyncThunk(`${SLICE_NAME}/registrationThunk`, registration)
 
 export interface State {
     loadStatus: string;
@@ -30,8 +30,9 @@ const slice = createSlice({
             state.loadStatus = LOAD_STATUSES.ERROR
         })
         builder.addCase(registrationThunk.fulfilled, (state, action) => {
-            state.loadStatus = LOAD_STATUSES.LOADED
             console.log(action.payload)
+
+            state.loadStatus = LOAD_STATUSES.LOADED
         })
     }
 })

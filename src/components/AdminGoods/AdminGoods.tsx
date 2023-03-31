@@ -51,7 +51,7 @@ export const AdminGoods = () => {
                 <div className={css.blockParams}>
                     <div className={css.sort}>
                         <p>Выберите параметр сортировки</p>
-                        <Select defaultValue="Выберите параметры" options={optionsSelectParams}
+                        <Select defaultValue={"Выберите параметр"} options={optionsSelectParams}
                                 onChange={handleOnChangeSelectParams}/>
                     </div>
                     <div className={css.sort}>

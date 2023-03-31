@@ -10,11 +10,13 @@ import dayjs from "dayjs";
 import {Link} from "react-router-dom";
 import css from "./registration.module.css"
 import {registrationThunk} from "../../../store/registration/reducer";
+import {useNavigate} from "react-router";
 
 export const Registration = () => {
 
     const categories = useSelector(getCategories);
     const dispatch = useAppDispatch()
+    const navigate = useNavigate()
 
     useEffect(() => {
         dispatch(actions.fetchCategory())
@@ -33,6 +35,7 @@ export const Registration = () => {
                         }, {})
                         dispatch(registrationThunk({...data, login: values.email, secret: {type: values.secretQuestion, answer: values.answer}}))
                         resetForm()
+                        navigate('/login')
                     }}
                     validateOnBlur={false}
                     validateOnChange={false}

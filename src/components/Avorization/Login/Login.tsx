@@ -3,7 +3,7 @@ import css from "./login.module.css";
 import {Link} from "react-router-dom";
 import {useState} from "react";
 import {useAppDispatch} from "../../../hooks/useAppDispatch";
-import {actions} from "../../../store/login/reducer";
+import {actions, loginThunk} from "../../../store/login/reducer";
 import {useNavigate} from "react-router";
 
 export const Login = () => {
@@ -18,10 +18,8 @@ export const Login = () => {
     };
 
     const loginHandler = (e: any) => {
-        dispatch(actions.loginThunk(form))
+        dispatch(loginThunk(form))
             .then(() => {
-
-                // window.location.reload()
                 navigate('/')
             }).catch(() => {
             console.log("show error tost")

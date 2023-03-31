@@ -3,9 +3,8 @@ import {login} from "../../api";
 
 const SLICE_NAME = "user";
 
-const loginThunk = createAsyncThunk(SLICE_NAME, async (credentials: {login: string, password: string}) => {
-    const response = await login(credentials);
-
+export const loginThunk = createAsyncThunk(`${SLICE_NAME}/loginThunk`, async (credentials: {login: string, password: string}) => {
+    const response =  await login(credentials);
     localStorage.setItem("userToken", response.token)
 
     return response
@@ -13,10 +12,12 @@ const loginThunk = createAsyncThunk(SLICE_NAME, async (credentials: {login: stri
 
 export interface GoodsStore {
     isAuth: boolean
+    userData: { login: string; token: string }
 }
 
 const initialState: GoodsStore = {
-    isAuth: Boolean(localStorage.getItem("userToken"))
+    isAuth: Boolean(localStorage.getItem("userToken")),
+    userData: {login: '', token: ''}
 }
 
 const slice = createSlice({
@@ -26,6 +27,7 @@ const slice = createSlice({
     extraReducers: (builder) => {
         builder.addCase(loginThunk.fulfilled, (state, action) => {
             state.isAuth = true
+            state.userData = action.payload
         })
     }
 })

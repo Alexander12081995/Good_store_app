@@ -79,16 +79,15 @@ export const useAdminGoods = () => {
         setParams((prevParams) => ({...prevParams, minPrice: values[0], maxPrice: values[1]}))
     }
     const resetParams = () => {
-        setParams({
-            limit: 20,
-            offset: 0,
+        setParams((prevParams) => ({
+            ...prevParams,
             text: "",
             categoryTypeIds: "1,2,3,4,5,6,7,8,9,10,11",
             minPrice: 0,
             maxPrice: 1000,
             sortBy: "price",
-            sortDirection: "asc",
-        })
+            sortDirection: "asc"
+        }))
     }
     const handleOnChangeSelectParams = (value: string) => {
         if (value === "minPrice") {
@@ -104,7 +103,7 @@ export const useAdminGoods = () => {
     }
 
     const onChangeParamsDebounce = useCallback(debounce((params: ParamsProps): void =>
-    dispatch(actionsProducts.fetchProducts(params) as any), 1_000), [dispatch])
+        dispatch(actionsProducts.fetchProducts(params) as any), 1_000), [dispatch])
 
 
     useEffect(() => {
