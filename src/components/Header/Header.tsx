@@ -35,8 +35,8 @@ export const Header = () => {
 
     const fetchGetProductsDebounce = useCallback(debounce((params) => getProducts(params).then(data => setProducts(data.items)), 1500), [])
 
-    const handlerButton = () => {
-        localStorage.setItem("userToken", "");
+    const logoutButton = () => {
+        localStorage.removeItem("userToken");
         window.location.reload()
     };
 
@@ -65,7 +65,7 @@ export const Header = () => {
                 onSelect={(_, {key}) => navigate(`/good/${key}`)}
                 onChange={updateParams}
             />
-            {isAuth && <Button onClick={handlerButton} className={css.login}>Выйти</Button>}
+            {isAuth && <Button onClick={logoutButton} className={css.login}>Выйти</Button>}
             {!isAuth && <Link to={"/login"}>
                 <Button className={css.login}>Войти</Button>
             </Link>}

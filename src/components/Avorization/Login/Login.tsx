@@ -17,7 +17,7 @@ export const Login = () => {
         setForm((prevForm) => ({...prevForm, ...nextForm}));
     };
 
-    const loginHandler = (e: any) => {
+    const loginHandler = () => {
         dispatch(loginThunk(form))
             .then(() => {
                 navigate('/')
@@ -37,7 +37,7 @@ export const Login = () => {
                 <div className={css.groupBtn}>
                     <Button htmlType={"submit"} onClick={loginHandler}>Войти</Button>
                     <Link to={"/registration"}>
-                        <Button>Зарегестрироваться</Button>
+                        <Button>Зарегистрироваться</Button>
                     </Link>
 
                 </div>

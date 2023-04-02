@@ -4,11 +4,11 @@ import {Good, GoodInCart, LOAD_STATUSES} from "../../types";
 
 
 
-const CART_NAME = "cart";
+const SLICE_NAME = "cart";
 
-const fetchGetCart = createAsyncThunk(CART_NAME, getCart)
+const fetchGetCart = createAsyncThunk(`${SLICE_NAME}/fetchGetCart`, getCart)
 
-const fetchAddGoodInCart = createAsyncThunk(`${CART_NAME}/addGoodInCart`,  async (body: {good?: Good, count?: number, id?: string}, thunkAPI) => {
+const fetchAddGoodInCart = createAsyncThunk(`${SLICE_NAME}/addGoodInCart`,  async (body: {good?: Good, count?: number, id?: string}, thunkAPI) => {
         const response = await addCart(body)
     thunkAPI.dispatch(fetchGetCart())
         return response
@@ -18,7 +18,7 @@ const fetchAddGoodInCart = createAsyncThunk(`${CART_NAME}/addGoodInCart`,  async
 export interface State {
     goodInCart: GoodInCart[]
     commonCount: number
-    loadStatus: string
+    loadStatus: LOAD_STATUSES
 }
 
 const initialState: State = {
@@ -28,7 +28,7 @@ const initialState: State = {
 }
 
 export const slice = createSlice({
-    name: CART_NAME,
+    name: SLICE_NAME,
     initialState,
     reducers: {},
     extraReducers: (builder) => {

@@ -3,13 +3,13 @@ import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import {getPopularCategories} from "../../api";
 
 
-const POPULAR_CATEGORIES_NAME = "popularCategories";
+const SLICE_NAME = "popularCategories";
 
-const fetchPopularCategories = createAsyncThunk(POPULAR_CATEGORIES_NAME, getPopularCategories)
+const fetchPopularCategories = createAsyncThunk(`${SLICE_NAME}/fetchPopularCategories`, getPopularCategories)
 
 export interface State {
     popularCategories: {category: Category, items: Good[]}[];
-    loadStatus: string;
+    loadStatus: LOAD_STATUSES;
 }
 
 export const initialState: State = {
@@ -18,7 +18,7 @@ export const initialState: State = {
 }
 
 export const slice = createSlice({
-    name: POPULAR_CATEGORIES_NAME,
+    name: SLICE_NAME,
     initialState,
     reducers: {},
     extraReducers: (builder) => {

@@ -9,6 +9,9 @@ import {getProducts, getProductsLoadStatus, getTotal} from "../../store/products
 import {getCategories} from "../../store/categories/selectors";
 import {useAppDispatch} from "../../hooks/useAppDispatch";
 import debounce from 'lodash/debounce';
+import {Link} from "react-router-dom";
+import {Button, Image} from "antd";
+import {deleteGoodFromStore} from "../../api";
 
 export interface ParamsProps {
     limit: number;
@@ -35,7 +38,7 @@ export const useAdminGoods = () => {
     const total = useSelector(getTotal);
     const dispatch = useAppDispatch();
 
-    const dataSource = products.map((product) => ({...product, key: product.id}))
+    const dataSource = products.map((product) => ({...product, key: product.id, change: "change", delete: "delete"}))
     const options = categories.map((category) => ({value: category.id, label: category.label}))
     const allCategories = [...options, {value: "12", label: "Все товары"}]
 
@@ -44,15 +47,34 @@ export const useAdminGoods = () => {
         navigate(`/good/${record.id}`)
     }
 
+    const [allProducts, setAllProducts] = useState(dataSource)
+
+    const deleteGood = (id: string) => {
+        deleteGoodFromStore(id)
+            .then(() => {
+                const updatedProducts = allProducts.filter((product) => product.id !== id)
+                setAllProducts(updatedProducts)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+    }
+
     const columns = [
         {
             title: "Продукт",
             dataIndex: "img",
             key: "img",
-            render: (img: string) => <img src={img} alt='product' className={css.img}/>
+            render: (img: string) => <Image src={img} alt='product' width={150} height={200} className={css.img}/>
         },
-        {title: "Название продукта", dataIndex: "label", key: "label"},
+        {title: "Название продукта", dataIndex: "label", key: "label", render: (text: string, record: any) => <Link to={`/good/${record.id}`}>{text}</Link>},
         {title: "Цена", dataIndex: "price", key: "price"},
+        {title: "Изменить", dataIndex: "change", key: "change", render: (text: string, record: any) => <Button>{text}</Button>},
+        {title: "Удалить", dataIndex: "delete", key: "delete", render: (text: string, record: any) => <Button onClick={() => {
+                console.log("record", record.id)
+                deleteGood(record.id)
+            }}>{text}</Button>},
+
     ]
 
     const [params, setParams] = useState<ParamsProps>({

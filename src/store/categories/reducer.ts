@@ -2,13 +2,13 @@ import {getCategories} from '../../api';
 import {Category, LOAD_STATUSES} from '../../types';
 import {createAsyncThunk, createSlice, PayloadAction} from "@reduxjs/toolkit";
 
-const CATEGORIES_NAME = 'category';
+const SLICE_NAME = 'category';
 
-const fetchCategory = createAsyncThunk(CATEGORIES_NAME, getCategories);
+const fetchCategory = createAsyncThunk(`${SLICE_NAME}/fetchCategory`, getCategories);
 
 export interface State {
     categories: Category[];
-    loadStatus: string;
+    loadStatus: LOAD_STATUSES;
 }
 const initialState: State = {
     categories: [],
@@ -16,7 +16,7 @@ const initialState: State = {
 }
 
 const slice = createSlice({
-    name: CATEGORIES_NAME,
+    name: SLICE_NAME,
     initialState,
     reducers: {},
     extraReducers: (builder) => {

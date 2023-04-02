@@ -1,8 +1,8 @@
 import {Good, LOAD_STATUSES} from '../../types';
 import {Link, useParams} from "react-router-dom";
-import {Image, Button, Breadcrumb} from 'antd';
+import {Breadcrumb, Button, Image} from 'antd';
 import css from './productPage.module.css';
-import {ShoppingCartOutlined, HomeOutlined, CheckOutlined} from '@ant-design/icons';
+import {CheckOutlined, HomeOutlined, ShoppingCartOutlined} from '@ant-design/icons';
 import {useSelector} from "react-redux";
 import {getCategories} from "../../store/categories/selectors";
 import {getProductsLoadStatus} from "../../store/products/selector";
@@ -15,6 +15,7 @@ import {Loader} from "../Common";
 import {useAppDispatch} from "../../hooks/useAppDispatch";
 import {getCart} from "../../store/cart/selector";
 import {useNavigate} from "react-router";
+import {getLogin} from "../../store/login/selector";
 
 export const ProductPage = () => {
 
@@ -23,6 +24,8 @@ export const ProductPage = () => {
 
     const {id} = useParams();
 
+
+    const isAuth = useSelector(getLogin)
     const navigate = useNavigate()
     const categories = useSelector(getCategories)
     const cart = useSelector(getCart)
@@ -33,7 +36,7 @@ export const ProductPage = () => {
     useEffect(() => {
         dispatch(actionsCategories.fetchCategory())
         dispatch(actionsProducts.fetchProducts())
-        dispatch(actionsCart.fetchGetCart())
+        // dispatch(actionsCart.fetchGetCart())
         window.scrollTo(0, 0)
     }, [])
 
@@ -42,8 +45,12 @@ export const ProductPage = () => {
 
 
     const addGoodInCart = () => {
-        dispatch(actionsCart.fetchAddGoodInCart({good: product[0], count: count + 1}))
-        setDone(true)
+        if (isAuth) {
+            dispatch(actionsCart.fetchAddGoodInCart({good: product[0], count: count + 1}))
+            setDone(true)
+        } else {navigate("/login")}
+
+
     }
 
     const navigateToCart = () => {
@@ -57,6 +64,7 @@ export const ProductPage = () => {
             getProducts({ids: id}).then((data) => setProduct(data.items))
         }
     }, [])
+
 
 
     return (

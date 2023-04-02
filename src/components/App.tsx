@@ -5,7 +5,6 @@ import 'antd/dist/reset.css';
 
 export const App = () => {
 
-
     return (
         <div className={css.wrapper}>
             <Header/>
