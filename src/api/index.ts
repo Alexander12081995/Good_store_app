@@ -98,7 +98,6 @@ const deleteGood = (url: string, productId: string) => {
 }
 
 export const deleteGoodFromStore = (id: string): Promise<Response> => {
-    console.log("Response",Response)
-   return  fetch(`http://localhost:3000/api/goods/${id}`)
+   return  fetch(`http://localhost:3000/api/goods/${id}`, {method: "DELETE"})
 }
 

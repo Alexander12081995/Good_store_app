@@ -47,13 +47,14 @@ export const useAdminGoods = () => {
         navigate(`/good/${record.id}`)
     }
 
-    const [allProducts, setAllProducts] = useState(dataSource)
+    // const [allProducts, setAllProducts] = useState(dataSource)
 
     const deleteGood = (id: string) => {
         deleteGoodFromStore(id)
             .then(() => {
-                const updatedProducts = allProducts.filter((product) => product.id !== id)
-                setAllProducts(updatedProducts)
+                dispatch(actionsProducts.fetchProducts(params))
+                // const updatedProducts = allProducts.filter((product) => product.id !== id)
+                // setAllProducts(updatedProducts)
             })
             .catch((error) => {
                 console.log(error)
@@ -71,7 +72,6 @@ export const useAdminGoods = () => {
         {title: "Цена", dataIndex: "price", key: "price"},
         {title: "Изменить", dataIndex: "change", key: "change", render: (text: string, record: any) => <Button>{text}</Button>},
         {title: "Удалить", dataIndex: "delete", key: "delete", render: (text: string, record: any) => <Button onClick={() => {
-                console.log("record", record.id)
                 deleteGood(record.id)
             }}>{text}</Button>},
 
