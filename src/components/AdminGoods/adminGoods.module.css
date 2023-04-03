@@ -1,7 +1,3 @@
-.img {
-    width: 150px;
-    height: 200px;
-}
 .blockParams {
     display: flex;
     justify-content: space-between;
@@ -22,4 +18,8 @@
     text-align: center;
     font-size: 30px;
     font-style: italic;
+}
+.input {
+    margin-top: 20px;
+    font-size: 17px;
 }

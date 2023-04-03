@@ -10,5 +10,20 @@
     align-items: baseline;
     column-gap: 20px;
     font-size: 30px;
-
 }
+.infoCart {
+    width: 90%;
+    margin: 20px auto 0;
+}
+.buttonCoast {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.btn {
+background-color: #be8f09;
+}
+.btn span {
+    color: white;
+}
+

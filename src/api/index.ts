@@ -34,31 +34,22 @@ export const getPopularCategories = (): Promise<{ category: Category; items: Goo
 export const getCart = (): Promise<GoodInCart[]> =>
     get("/api/cart")
 
-let token = ""
 
 const post = (url: string, body: Record<string, unknown>) => {
     return fetch(new URL(url, BASE_URL), {method: "POST", body: JSON.stringify(body)})
         .then((data) => {
-            // if (data.status !== 200) throw Error(String(data.status))
-            console.log('data', data)
             if (data.ok) {
                 return data.json();
             }
+            throw new Error("oops")
         })
-        // .then((response) => {
-        //     console.log('reapToken', response)
-        //
-        //     if (response) token = response.token
-        //     localStorage.setItem("userToken", token)
-        //     return response
-        // })
 }
 
 export const login = (credentials: { login: string, password: string }): Promise<{ login: string; token: string }> => post("/api/login", credentials)
 
 export const registration = (body: any): any => post("/api/registration", body)
 
-const postCart = (url: string, body: Record<string, unknown>) => {
+const putCart = (url: string, body: Record<string, unknown>) => {
     return fetch(new URL(url, BASE_URL), {
         method: "PUT",
         body: JSON.stringify(body),
@@ -73,8 +64,40 @@ const postCart = (url: string, body: Record<string, unknown>) => {
 }
 
 
-export const addCart = (body: {good?: Good, count?: number, id?: string}): Promise<GoodInCart[]> => postCart("/api/cart", body)
+export const addCart = (body: {good?: Good, count?: number, id?: string}): Promise<GoodInCart[]> => putCart("/api/cart", body)
 
 
+const postGood = (url: string, body: Omit<Good, 'id'>) => {
+    return fetch(new URL(url, BASE_URL), {
+        method: "POST",
+        body: JSON.stringify(body)
+    })
 
+        .then((data) => {
+            if (data.ok) {
+                return data.json()
+            }
+            throw new Error('oops')
+        })
+}
+
+export const postGoodInStoreApi = (body: Omit<Good, "id">): Promise<Good> => postGood("/api/goods", body)
+
+const deleteGood = (url: string, productId: string) => {
+    return fetch(new URL(url, BASE_URL), {
+        method: "DELETE",
+        body: JSON.stringify(productId)
+    })
+        .then((data) => {
+            console.log("data", data)
+            if (data.ok) {
+                return data.json()
+            }
+            throw new Error("oops")
+        })
+}
+
+export const deleteGoodFromStore = (id: string): Promise<Response> => {
+   return  fetch(`http://localhost:3000/api/goods/${id}`, {method: "DELETE"})
+}
 
